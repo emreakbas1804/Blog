@@ -1,0 +1,9 @@
+/Users/emre/Documents/Projelerim/Blog/Entity/obj/Debug/netstandard2.0/Entity.csprojAssemblyReference.cache
+/Users/emre/Documents/Projelerim/Blog/Entity/obj/Debug/netstandard2.0/Entity.AssemblyInfoInputs.cache
+/Users/emre/Documents/Projelerim/Blog/Entity/obj/Debug/netstandard2.0/Entity.AssemblyInfo.cs
+/Users/emre/Documents/Projelerim/Blog/Entity/obj/Debug/netstandard2.0/Entity.csproj.CoreCompileInputs.cache
+/Users/emre/Documents/Projelerim/Blog/Entity/bin/Debug/netstandard2.0/Entity.deps.json
+/Users/emre/Documents/Projelerim/Blog/Entity/bin/Debug/netstandard2.0/Entity.dll
+/Users/emre/Documents/Projelerim/Blog/Entity/bin/Debug/netstandard2.0/Entity.pdb
+/Users/emre/Documents/Projelerim/Blog/Entity/obj/Debug/netstandard2.0/Entity.dll
+/Users/emre/Documents/Projelerim/Blog/Entity/obj/Debug/netstandard2.0/Entity.pdb

@@ -1,0 +1,12 @@
+/Users/emre/Documents/Projelerim/Blog/DataAccess/bin/Debug/netstandard2.0/DataAccess.deps.json
+/Users/emre/Documents/Projelerim/Blog/DataAccess/bin/Debug/netstandard2.0/DataAccess.dll
+/Users/emre/Documents/Projelerim/Blog/DataAccess/bin/Debug/netstandard2.0/DataAccess.pdb
+/Users/emre/Documents/Projelerim/Blog/DataAccess/bin/Debug/netstandard2.0/Entity.dll
+/Users/emre/Documents/Projelerim/Blog/DataAccess/bin/Debug/netstandard2.0/Entity.pdb
+/Users/emre/Documents/Projelerim/Blog/DataAccess/obj/Debug/netstandard2.0/DataAccess.csprojAssemblyReference.cache
+/Users/emre/Documents/Projelerim/Blog/DataAccess/obj/Debug/netstandard2.0/DataAccess.AssemblyInfoInputs.cache
+/Users/emre/Documents/Projelerim/Blog/DataAccess/obj/Debug/netstandard2.0/DataAccess.AssemblyInfo.cs
+/Users/emre/Documents/Projelerim/Blog/DataAccess/obj/Debug/netstandard2.0/DataAccess.csproj.CoreCompileInputs.cache
+/Users/emre/Documents/Projelerim/Blog/DataAccess/obj/Debug/netstandard2.0/DataAccess.csproj.CopyComplete
+/Users/emre/Documents/Projelerim/Blog/DataAccess/obj/Debug/netstandard2.0/DataAccess.dll
+/Users/emre/Documents/Projelerim/Blog/DataAccess/obj/Debug/netstandard2.0/DataAccess.pdb

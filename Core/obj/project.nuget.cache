@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "a1K/yvF3kEM1dwzXQ0Cg3/olopfcaTxlPic5/mCsaNtv9T8NQQGHINJUMw/X/w0WIPbIw8VPERJq6cOkXZo/Uw==",
+  "success": true,
+  "projectFilePath": "/Users/emre/Documents/Projelerim/Blog/Core/Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/emre/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/emre/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
