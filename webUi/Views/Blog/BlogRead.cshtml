@@ -1,0 +1,62 @@
+@model List<Blog>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akbaş Blog</title>
+    <link rel="stylesheet" href="~/content/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="~/content/jquery/dist/jquery.js"></script>
+    <style>
+        .blog-date{
+            float: right;
+            font-size: 13px;
+            opacity: .80;
+        }
+    </style>
+</head>
+
+<body>
+
+    @await Html.PartialAsync("_navbar")
+
+    <div class="container">
+        <div class="row">                        
+            <div class="col-md-3 mt-4">
+                @await Component.InvokeAsync("CategoryList")
+            </div>
+            <div class="col-md-9">
+                @foreach (var item in Model)
+                {
+                    <div class="card col-md-12 p-2 my-4">
+                        <div class="text-center">
+                            <img class="card-img-top text-center" src="~/images/blogs/@item.BlogImage"
+                                style="width:80%; height: 400px;object-fit:cover;">
+                        </div>
+                        
+                        <div class="card-body mt-4">
+                            <h3 class="card-title">@item.BlogTitle <span
+                                class="blog-date">@item.BlogCreateDate.ToString("dd/MM/yyyy")</span></h3>
+                            <p class="card-text"> @item.BlogContent </p>                            
+                        </div>
+                    </div>
+                }
+            </div>
+
+
+        </div>
+    </div>
+
+    
+    @await Component.InvokeAsync("CommentListByBlog",new {id = @Model.FirstOrDefault().BlogId})
+    
+    @await Html.PartialAsync("~/Views/Comment/PartialAddComment.cshtml")   
+    @* @await Html.PartialAsync("~/Views/Comment/CommentListByBlog.cshtml") *@
+    
+    @await Html.PartialAsync("_footer")
+</body>
+
+</html>

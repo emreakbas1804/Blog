@@ -1,0 +1,65 @@
+@model Writer
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portre Blog Kayıt Ol</title>
+    <link rel="stylesheet" href="~/content/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="~/content/jquery/dist/jquery.js"></script>
+    <script src="~/content/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+<body>
+
+    @await Html.PartialAsync("_navbar")
+    <div class="container my-5">
+        <div class="row">
+            <h3>Yazar kayıt formu</h3>
+            <hr>
+            <form action="register" method="post">
+                <div class="form-group my-3">
+                    <label for="exampleInputEmail1">Ad soyad</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ad soyad giriniz." asp-for="WriterName">  
+                    <small class="text-danger">@Html.ValidationMessageFor(x=> x.WriterName)</small>  
+                           
+                </div>
+
+                <div class="form-group my-3">
+                    <label for="exampleInputEmail1">Email adresi</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Mail adresi giriniz" asp-for="WriterMail">                    
+                    <small class="text-danger">@Html.ValidationMessageFor(x=> x.WriterMail) </small>  
+                </div>
+
+                <div class="form-group my-3">
+                    <label for="exampleInputPassword1">Parola</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Parola giriniz." asp-for="WriterPassword">
+                    <small class="text-danger">@Html.ValidationMessageFor(x=> x.WriterPassword)</small>  
+                </div>
+                
+
+                <div class="form-check my-3">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked disabled>
+                    <label class="form-check-label" for="exampleCheck1"><a href="#" id="okudum-onayliyorum">Aydınlatma metnini okudum</a></label>
+                </div>
+
+                <button type="submit" class="btn btn-success">Kayıt </button>
+                
+            </form>
+        </div>
+    </div>
+    
+    @await Html.PartialAsync("_footer")
+    <script>
+        $("#okudum-onayliyorum").click(function(){
+            swal("Aydınlatma metni","Sistem üzerinden oluşturulan kayıt sonucu kvkk uygun olarak verileriniz saklanacak, ancak kayıtlı olan veriler üzerinden email adresine erişilip sizlere email gönderme hakkı bizlere kutucuğu onaylayarak verilecektir. Mail kutuma gelen mesajlardan rahatsız olmayacağıma ve hiçbir talep, şikayette bulunmayacağıma var ise şerefim üzerine and içerim.ol Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem reprehenderit non quam sint alias eligendi nesciunt, ullam voluptas? Numquam, debitis.");
+        })
+    </script>
+</body>
+
+</html>

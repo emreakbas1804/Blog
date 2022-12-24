@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Business.Abstract;
+using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Entity.Concrete;
 
@@ -7,34 +8,34 @@ namespace Business.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        EFCategoryRepository eFCategoryRepository;
-        public CategoryManager()
+        ICategoryDal categoryDal;
+        public CategoryManager(ICategoryDal CategoryDal)
         {
-            eFCategoryRepository = new EFCategoryRepository();
+            categoryDal = CategoryDal;
         }
         public void CategoryAdd(Category category)
         {
-            eFCategoryRepository.Insert(category);
+            categoryDal.Insert(category);
         }
 
         public void CategoryDelete(Category category)
         {
-            eFCategoryRepository.Delete(category);
+            categoryDal.Delete(category);
         }
 
         public void CategoryUpdate(Category category)
         {
-            eFCategoryRepository.Update(category);
+            categoryDal.Update(category);
         }
 
         public Category GetById(int id)
         {
-            return eFCategoryRepository.GetById(id);
+            return categoryDal.GetById(id);
         }
 
         public List<Category> GetList()
         {
-            return eFCategoryRepository.GetListAll();
+            return categoryDal.GetListAll();
         }
     }
 }

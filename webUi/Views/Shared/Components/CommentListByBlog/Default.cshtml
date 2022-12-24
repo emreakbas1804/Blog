@@ -1,0 +1,30 @@
+@model List<Comment>
+
+<div class="container">
+    <div class="row">
+        <h3>Yorumlar</h3>
+        <hr>
+        @foreach (var item in Model)
+        {
+            <div class="row mt-3">
+                <div class="col-8">
+                    <div class="row border rounded">
+                        <div class="col-md-2">
+                            <div class="text-center">
+                                <img src="~/images/user.png" style="width:80px; height:80px; object-fit:cover;">
+                            </div>                                                       
+                        </div>
+                        <div class="col-md-10">
+                            <p class="p-3">
+                                @item.CommentContent
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        }
+
+    </div>
+</div>

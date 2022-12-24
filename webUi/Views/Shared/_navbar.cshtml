@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="~/css/_navbar.css">
+<nav>
+    <div class="container">
+        <a href="~/">            
+            <h3 class="baslik">Portre Blog</h3>
+        </a>
+        <div class="responsive" id="nav-links">
+            <ul>                
+                <li><a href="~/blog/">Bloglar</a></li>                
+                <li><a href="~/home/login">Yazar giriş</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars nav-icon"></i>
+
+    </div>
+</nav>
+
+<script>
+    $('.nav-icon').click(function () {
+        $('#nav-links').toggle("bilind");
+        return false;
+    });
+
+</script>
+

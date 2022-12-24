@@ -1,0 +1,12 @@
+@model List<Category>
+<div>    
+    <h5>Kategoriler</h5>
+    <hr>
+    @foreach (var item in Model)
+    {       
+        <p>
+            <a href="#" style="color:black; text-decoration:none;">@item.CategoryName</a>
+        </p>    
+        
+    }
+</div>

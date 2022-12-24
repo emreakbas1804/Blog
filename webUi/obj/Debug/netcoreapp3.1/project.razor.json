@@ -12432,6 +12432,55 @@
         }
       },
       {
+        "HashCode": -457937598,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__CategoryListViewComponentTagHelper",
+        "AssemblyName": "webUi",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:category-list"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__CategoryListViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "CategoryList"
+        }
+      },
+      {
+        "HashCode": -1576973837,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__CommentListByBlogViewComponentTagHelper",
+        "AssemblyName": "webUi",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:comment-list-by-blog",
+            "Attributes": [
+              {
+                "Name": "id"
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__CommentListByBlogViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "CommentListByBlog"
+        }
+      },
+      {
         "HashCode": 1342982883,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -14402,8 +14451,73 @@
   "RootNamespace": "webUi",
   "Documents": [
     {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Category/Index.cshtml",
+      "TargetPath": "Views\\Category\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Shared/Components/CommentListByBlog/Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\CommentListByBlog\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Blog/BlogRead.cshtml",
+      "TargetPath": "Views\\Blog\\BlogRead.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Comment/Index.cshtml",
+      "TargetPath": "Views\\Comment\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Blog/Index.cshtml",
+      "TargetPath": "Views\\Blog\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Home/Register.cshtml",
+      "TargetPath": "Views\\Home\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Shared/_footer.cshtml",
+      "TargetPath": "Views\\Shared\\_footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Shared/_navbar.cshtml",
+      "TargetPath": "Views\\Shared\\_navbar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Home/Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Shared/Components/CategoryList/Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\CategoryList\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Comment/CommentListByBlog.cshtml",
+      "TargetPath": "Views\\Comment\\CommentListByBlog.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/emre/Documents/Projelerim/Blog/webUi/Views/Comment/PartialAddComment.cshtml",
+      "TargetPath": "Views\\Comment\\PartialAddComment.cshtml",
       "FileKind": "mvc"
     }
   ],

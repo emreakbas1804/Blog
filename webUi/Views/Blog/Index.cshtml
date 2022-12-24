@@ -1,0 +1,51 @@
+@model List<Blog>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akbaş Blog</title>
+    <link rel="stylesheet" href="~/content/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="~/content/jquery/dist/jquery.js"></script>
+    <style>
+        .blog-date{
+            float: right;
+            font-size: 10px;
+            opacity: .80;
+        }
+        .blog-category{
+            font-size: 13px;
+            opacity: .80;
+        }
+    </style>
+</head>
+
+<body>
+
+    @await Html.PartialAsync("_navbar")
+
+    <div class="container">
+        <div class="row">
+            <h2 class="my-3">Bloglar</h2>
+            <hr>
+            @foreach (var item in Model)
+            {
+                <div class="card col-md-4 p-2 m-2">
+                    <img class="card-img-top" src="~/images/blogs/@item.BlogImage" style="width:100%; height: 300px;object-fit:cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.BlogTitle  <span class="blog-category"> (@item.Category.CategoryName)</span> <span class="blog-date">@item.BlogCreateDate.ToString("dd/MM/yyyy")</span></h5>
+                        <p class="card-text">@item.BlogContent.Substring(0,@item.BlogContent.Substring(0,130).LastIndexOf(" "))...</p>
+                        <a href="~/blog/oku/@item.BlogId" class="btn btn-success">Daha fazla oku...</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+</body>
+
+</html>

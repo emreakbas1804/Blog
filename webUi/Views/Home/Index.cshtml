@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akbaş Blog</title>
-</head>
-<body>
-    <h1>deneme</h1>
+    <title>Portre Blog</title>
+    <link rel="stylesheet" href="~/content/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="~/content/jquery/dist/jquery.js"></script>
+    <style>
+        .header1{
+            background-image: url("/images/home-bg.jpeg");
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+        .header1-h1{            
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+        }
+    </style>
     
+</head>
+
+<body>
+    
+    @await Html.PartialAsync("_navbar")
+
+    <div class="header1">
+        <div class="container">
+            <h1 class="header1-h1">En güncel blog yazıları...</h1>
+        </div>
+    </div> 
+
+
+    @await Html.PartialAsync("_footer")
+
 </body>
+
 </html>

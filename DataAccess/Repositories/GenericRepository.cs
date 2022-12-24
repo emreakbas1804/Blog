@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using DataAccess.Abstract;
 using DataAccess.Concrete.Context;
 
@@ -28,6 +30,11 @@ namespace DataAccess.Repositories
         {
             context.Add(entity);
             context.SaveChanges();
+        }
+
+        public List<T> GetListAll(Expression<Func<T, bool>> filter)
+        {
+            return context.Set<T>().Where(filter).ToList();
         }
 
         public void Update(T entity)

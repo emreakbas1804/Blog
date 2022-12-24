@@ -1,0 +1,14 @@
+/Users/emre/Documents/Projelerim/Blog/Business/bin/Debug/netstandard2.0/Business.deps.json
+/Users/emre/Documents/Projelerim/Blog/Business/bin/Debug/netstandard2.0/Business.dll
+/Users/emre/Documents/Projelerim/Blog/Business/bin/Debug/netstandard2.0/Business.pdb
+/Users/emre/Documents/Projelerim/Blog/Business/bin/Debug/netstandard2.0/DataAccess.dll
+/Users/emre/Documents/Projelerim/Blog/Business/bin/Debug/netstandard2.0/Entity.dll
+/Users/emre/Documents/Projelerim/Blog/Business/bin/Debug/netstandard2.0/Entity.pdb
+/Users/emre/Documents/Projelerim/Blog/Business/bin/Debug/netstandard2.0/DataAccess.pdb
+/Users/emre/Documents/Projelerim/Blog/Business/obj/Debug/netstandard2.0/Business.csprojAssemblyReference.cache
+/Users/emre/Documents/Projelerim/Blog/Business/obj/Debug/netstandard2.0/Business.AssemblyInfoInputs.cache
+/Users/emre/Documents/Projelerim/Blog/Business/obj/Debug/netstandard2.0/Business.AssemblyInfo.cs
+/Users/emre/Documents/Projelerim/Blog/Business/obj/Debug/netstandard2.0/Business.csproj.CoreCompileInputs.cache
+/Users/emre/Documents/Projelerim/Blog/Business/obj/Debug/netstandard2.0/Business.csproj.CopyComplete
+/Users/emre/Documents/Projelerim/Blog/Business/obj/Debug/netstandard2.0/Business.dll
+/Users/emre/Documents/Projelerim/Blog/Business/obj/Debug/netstandard2.0/Business.pdb

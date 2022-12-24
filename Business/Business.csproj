@@ -1,11 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="../Entity/Entity.csproj" />
-    <ProjectReference Include="../DataAccess/DataAccess.csproj" />
+    <ProjectReference Include="../Entity/Entity.csproj"/>
+    <ProjectReference Include="../DataAccess/DataAccess.csproj"/>
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="7.0"/>
+  </ItemGroup>
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
 </Project>
